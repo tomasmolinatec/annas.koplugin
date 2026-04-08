@@ -31,7 +31,7 @@ local Zlibrary = WidgetContainer:extend{
 }
 
 function Zlibrary:onDispatcherRegisterActions()
-    Dispatcher:registerAction("zlibrary_search", { category="none", event="ZlibrarySearch", title=T("Z-library search"), general=true,})
+    Dispatcher:registerAction("annas_search", { category="none", event="ZlibrarySearch", title=T("Z-library search"), general=true,})
 end
 
 function Zlibrary:init()
@@ -59,7 +59,7 @@ function Zlibrary:init()
 
 end
 
-function Zlibrary:onZlibrarySearch()
+function Zlibrary:onAnnasSearch()
     local def_search_input
     if self.ui and self.ui.doc_settings and self.ui.doc_settings.data.doc_props then
       local doc_props = self.ui.doc_settings.data.doc_props
@@ -72,7 +72,7 @@ end
 function Zlibrary:addToMainMenu(menu_items)
 
     if not self.ui.view then
-        menu_items.zlibrary_main = {
+        menu_items.annas_main = {
             sorting_hint = "search",
             text = T("Anna's Archive"),
             callback = function()
