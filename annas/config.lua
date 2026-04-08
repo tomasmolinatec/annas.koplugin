@@ -1,7 +1,7 @@
 local util = require("util")
 local logger = require("logger")
 local lfs = require("libs/libkoreader-lfs")
-local T = require("zlibrary.gettext")
+local T = require("annas.gettext")
 
 local Config = {}
 

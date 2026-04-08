@@ -1,11 +1,11 @@
-local Config = require("zlibrary.config")
+local Config = require("annas.config")
 local util = require("util")
 local logger = require("logger")
 local json = require("json")
 local ltn12 = require("ltn12")
 local http = require("socket.http")
 local socketutil = require("socketutil")
-local T = require("zlibrary.gettext")
+local T = require("annas.gettext")
 
 local Api = {}
 
